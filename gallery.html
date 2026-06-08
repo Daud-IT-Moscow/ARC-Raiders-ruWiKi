@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - ARC Raiders ruWiKi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <header class="header">
+    <h1 class="logo">ARC Raiders</h1>
+
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-images"></i> Фотогалерея</h1>
+            <p class="subtitle">Коллекция изображений по теме: <span class="theme-name">ARC Raiders</span></p>
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="nav-grid">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="gallery.html" class="nav-link active"><i class="fas fa-camera"></i> Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i>
+                    Изображений: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active">
+                    <i class="fas fa-th"></i> Сетка
+                </button>
+                <button id="list-view" class="view-btn">
+                    <i class="fas fa-list"></i> Список
+                </button>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="nature">Природа</button>
+                <button class="filter-btn" data-filter="people">Люди</button>
+                <button class="filter-btn" data-filter="enemies">Противники</button>
+                <button class="filter-btn" data-filter="battle">Бой</button>
+            </div>
+        </div>
+        
+        <!-- ГАЛЕРЕЯ С ИСПОЛЬЗОВАНИЕМ CSS GRID -->
+        <div class="gallery-grid" id="image-gallery">
+            <!-- Карточка 1 -->
+    <article class="image-card" data-category="nature">
+        <div class="card-image">
+            <img src="images/priroda.webp" 
+                 alt="Природа постапокалиптического мира"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="1">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Природа постапокалиптического мира</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Это мёртвая красота после конца цивилизации.
+Земля не сгорела и не умерла полностью — она застыла, будто ждёт, кто победит: человек или машина.
+
+Леса проросли сквозь бетон и сталь, корни разрывают асфальт, мох покрывает руины городов. Трава колышется там, где раньше были дороги, а ветер гуляет по пустым кварталам, в которых больше нет голосов. Природа медленно и упрямо возвращает себе мир, не спрашивая разрешения.
+
+Но над этим спокойствием висит постоянная угроза. В небе — холодный механический гул, среди холмов и развалин — следы ARC. Животные редки, тишина давит, а каждый пейзаж одновременно красив и опасен.
+
+Это мир, где зелень и ржавчина сплелись воедино. Мир, который выглядит живым — но принадлежит не людям. Пока.</p>
+        </div>
+    </article>
+
+            <!-- Карточка 2 -->
+    <article class="image-card" data-category="people">
+        <div class="card-image">
+            <img src="images/OBLOZHKA.jpg" 
+                 alt="Рейдеры"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Рейдеры</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Рейдеры — это последние, кто осмелился поднять голову в мире, где небо принадлежит машинам.
+Они выходят из убежищ не ради славы, а потому что иначе человечество исчезнет. Каждый рейд — шаг в мёртвый город, где сталь охотится на плоть, а ошибка стоит жизни.
+
+Их броня поцарапана, оружие собрано из обломков прошлого, но за этим железом — несгибаемая воля. Рейдеры идут туда, куда другие боятся даже смотреть: в руины, под гул ARC, под тенью гигантских машин. Они знают — вернутся не все, но всё равно выходят.
+
+Это не солдаты и не избранные. Это люди, которые решили, что человечество ещё не сказало последнее слово. Пока рейдеры поднимаются на поверхность, мир не принадлежит машинам окончательно.</p>
+    </article>
+
+            <!-- Карточка 3 -->
+    <article class="image-card" data-category="people">
+        <div class="card-image">
+            <img src="images/SLOZHNAYA SITUATION.png" 
+                 alt="Вынужденное перемирие"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="3">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Вынужденное перемирие</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Два рейдера сходятся среди руин. Чужие. Пальцы на спуске, взгляды холодные — здесь выживает только тот, кто стреляет первым. Между ними висит напряжение, готовое сорваться в кровь.
+
+И в этот момент мир выдаёт их.
+
+Металлический гул режет воздух. ARC выходит из тени — без эмоций, без выбора, без пощады. Теперь враг ясен, и он не человек.
+
+Рейдеры смотрят друг на друга — они понимают. Один жест, один выстрел в сторону машины, и ненависть откладывается. Не забыта. Не прощена. Просто отложена.
+
+Они дерутся плечом к плечу, зная: как только ARC падёт — всё может начаться снова.
+Но пока машины наступают, люди остаются людьми.</p>
+        </div>
+    </article>
+
+        <!-- Карточка 4 -->
+    <article class="image-card" data-category="enemies">
+        <div class="card-image">
+            <img src="images/BPAZHESKIE ROBOTS.png" 
+                 alt="Осы"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="4">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Осы</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Они появляются внезапно: резкий механический визг, вспышка металла в воздухе — и уже поздно. «Оса» не ищет бой, она находит цель. Манёвренная, нервная, злая — дрон кружит, как настоящий насекомый хищник, выжидая момент для удара.
+
+Её корпус лёгкий, угловатый, будто собранный для одной задачи — убивать. Электрические разряды или очереди бьют точно, без колебаний. Она не боится, не отступает и не сомневается. Для неё рейдер — просто отметка.
+
+«Оса» опасна не силой, а скоростью и давлением. Она не даёт передышки, не позволяет спрятаться, заставляет паниковать. И если ты её услышал — значит, она уже рядом.</p>
+        </div>
+    </article>
+
+        <!-- Карточка 5 -->
+    <article class="image-card" data-category="enemies">
+        <div class="card-image">
+            <img src="images/CTPAX.png" 
+                 alt="Поджигатель"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="5">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Поджигатель</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Он выходит из дыма, как каратель: тяжёлый корпус, глухие шаги, оружие, созданное не для боя, а для выжигания. Огонь для него — инструмент контроля. Он не спешит, потому что знает: пространство всё равно станет адом.
+
+Струи пламени заливают укрытия, выгоняют рейдеров на открытую землю, лишают выбора. Поджигатель не охотится — он зачищает. Ему не важно, кто перед ним: один человек или группа. Всё горит одинаково.
+
+Это враг, который давит психологически. С ним нельзя тянуть, нельзя ошибаться. Если он подошёл близко — мир вокруг уже пылает.</p>
+        </div>
+    </article>
+
+        <!-- Карточка 6 -->
+    <article class="image-card" data-category="battle">
+        <div class="card-image">
+            <img src="images/QUEEN.png" 
+                 alt="Бой"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="6">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Бой</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Рейдер выходит на арену руин — и тишина ломается тяжёлым гулом.
+Королева поднимается из металла и пыли, огромная, холодная, как приговор. Каждое её движение — землетрясение, каждый взгляд — метка на смерть.
+
+Рейдер мал на её фоне. Но он движется. Скользит между обломками, уходит из-под ударов, стреляет точно, экономя каждый патрон. Королева отвечает залпами дронов и сокрушающими атаками, давит массой, перекрывает пространство, не даёт дышать.
+
+Бой — это не сила против силы. Это упорство против неизбежности.
+Рейдер падает, поднимается, снова идёт вперёд. Он бьёт по слабым местам, рискуя жизнью за каждый метр.
+
+И когда Королева наконец замирает, мир на секунду становится тихим.
+Рейдер остаётся стоять — один, среди дыма и искр. Не победитель.
+Выживший.</p>
+        </div>
+    </article>
+
+        
+    </main>
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2026</span> Dustum Production. Все права защищены.</p>
+            <!-- <p class="js-status">JavaScript загружен и работает!</p> -->
+        </div>
+    </footer>
+
+    
+
+    <!-- ПОДКЛЮЧЕНИЕ JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

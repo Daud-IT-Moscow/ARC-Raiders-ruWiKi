@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонажи - ARC Raiders ruWiKi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <header class="header">
+    <h1 class="logo">ARC Raiders</h1>
+
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-images"></i> Персонажи игры</h1>
+            <p class="subtitle">Коллекция изображений по теме: <span class="theme-name">ARC Raiders</span></p>
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="nav-grid">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="characters.html" class="nav-link active"><i class="fas fa-camera"></i> Персонажи</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i>
+                    Изображений: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active">
+                    <i class="fas fa-th"></i> Сетка
+                </button>
+                <button id="list-view" class="view-btn">
+                    <i class="fas fa-list"></i> Список
+                </button>
+            </div>
+        </div>
+        
+        
+        <!-- ГАЛЕРЕЯ С ИСПОЛЬЗОВАНИЕМ CSS GRID -->
+        <div class="gallery-grid" id="image-gallery">
+            <!-- Карточка 1 -->
+    <article class="image-card" data-category="nature">
+        <div class="card-image">
+            <img src="images/Селеста.png" 
+                 alt="Селеста"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="1">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Селеста</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Харизматичный лидер рейдеров в Сперанце, Селеста является вездесущим символом надежды для человечества в подполье. Как лидер рейдеров, она отвечает за поддержание боевого духа, даже когда атаки ARC усиливаются, и когда случается трагедия. В то время как она старается не напрягаться, вы можете застать ее за разработкой стратегии до поздней ночи, за яростной игрой в дартс у бара и за чашечкой кофе в течение всего дня, чтобы не сомкнуть глаз.</p>
+        </div>
+    </article>
+
+            <!-- Карточка 2 -->
+    <article class="image-card" data-category="people">
+        <div class="card-image">
+            <img src="images/Тянь Вэнь.png" 
+                 alt="Тянь Вэнь"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Тянь Вэнь</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Большинство людей, живущих под землей, видели Тянь Вэнь не больше, чем ее глазами. Мастер по изготовлению оружия, живущая в Сперанце, Тянь Вэнь - затворница, которая, по-видимому, предпочитает общество своих инструментов любому человеческому существу. Она не скрывает своего презрения к большинству рейдеров и общается с ними только в своих интересах. Но, хотя она никогда бы в этом не призналась, у нее есть слабость к вещам, нуждающимся в ремонте — фигуркам, оружию, а иногда даже к людям.</p>
+    </article>
+
+            <!-- Карточка 3 -->
+    <article class="image-card" data-category="people">
+        <div class="card-image">
+            <img src="images/Аполлон.png" 
+                 alt="Аполлон"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="3">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Аполлон</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Сперанца - не первое родео Аполлона. Аполлон, механик-путешественник, на время выбрал Сперанцу своим домом, ремонтируя все, что нужно рейдерам. Хотя временами он может казаться загадочным в отношении своего прошлого, Аполлон не может не стараться сделать так, чтобы там, где он находится, было лучше. Будь то руководство детской футбольной командой или пополнение библиотеки книгами, Аполлон знает, что в жизни есть нечто большее, чем просто выживание.</p>
+        </div>
+    </article>
+
+        <!-- Карточка 4 -->
+    <article class="image-card" data-category="enemies">
+        <div class="card-image">
+            <img src="images/Шани.png" 
+                 alt="Шани"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="4">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Шани</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">У Шани, главы службы безопасности Сперанцы, есть планы на случай непредвиденных обстоятельств. Она является постоянным экспертом Сперанцы по ARC и главным помощником Селесты, когда дело доходит до планирования успешных стычек на поверхности. В то время как большинство жителей Сперанцы знают ее как одержимую, подозрительную и параноидальную, Шани не заботится о своей репутации, пока она в состоянии обеспечить безопасность своего города.</p>
+        </div>
+    </article>
+
+        <!-- Карточка 5 -->
+    <article class="image-card" data-category="enemies">
+        <div class="card-image">
+            <img src="images/Ланс.png" 
+                 alt="Ланс"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="5">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Ланс</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 29 января 2026</p>
+            <p class="image-description">Лэнс - один из самых талантливых медиков, которых может предложить Толедо. Эксцентричный, жизнерадостный андроид Лэнс всегда старается изо всех сил вписаться в общество людей, регулярно поет в полуночном караоке, покупает последние новинки андеграундной моды или занимается боксом на бойцовском ринге Сперанцы. Хотя амнезия лишила его воспоминаний о том, кем он был до прибытия сюда, эти запертые воспоминания не исчезнут навсегда.</p>
+        </div>
+    </article>
+
+    </main>
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2026</span> Dustum Production. Все права защищены.</p>
+            <!-- <p class="js-status">JavaScript загружен и работает!</p> -->
+        </div>
+    </footer>
+
+    
+
+    <!-- ПОДКЛЮЧЕНИЕ JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

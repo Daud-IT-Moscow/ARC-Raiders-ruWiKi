@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contacts-page"> <!-- вот здесь класс -->
+
+    <!-- Навигация -->
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-container">
+
+        <!-- Информационная карточка -->
+        <section class="contact-card">
+            <h1 class="contact-title">Контактная информация</h1>
+
+            <p class="contact-name">ФИО: Биссиров Дауд Денильбекович</p>
+            <p class="contact-email">Email: bissirovdaud111@gmail.com</p>
+            <p class="contact-specialization">
+                Специализация: фан-сайт по игре ARC Raiders
+            </p>
+            <p class="contact-location">Штаб-квартира: Иннополис, Россия</p>
+
+        <!-- Форма обратной связи -->
+        <section class="contact-form-section">
+            <h2>Форма обратной связи</h2>
+
+            <form class="contact-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Тема сообщения</label>
+                    <select id="subject" name="subject">
+                        <option value="question">Вопрос</option>
+                        <option value="suggestion">Предложение</option>
+                        <option value="collaboration">Сотрудничество</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Введите сообщение"></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement"> Я согласен на обработку персональных данных</label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Отправить сообщение
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Дополнительный информационный блок -->
+        <section class="additional-info">
+            <h2>Дополнительная информация</h2>
+
+            <div class="working-hours">
+                <h3>График доступности</h3>
+                <p>Пн–Пт: 10:00–20:00</p>
+                <p>Сб–Вс: по договорённости</p>
+            </div>
+
+            <div class="faq">
+                <h3>FAQ</h3>
+                <p>Как быстро вы отвечаете? — В течение 24 часов.</p>
+                <p>Можно ли предложить материал для сайта? — Да, через форму выше.</p>
+                <p>Это официальный сайт игры? — Нет, это фан-проект.</p>
+            </div>
+
+            <div class="contact-instructions">
+                <h3>Инструкция по связи</h3>
+                <p>Заполните форму, укажите корректный email и дождитесь ответа.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Dustum Production. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
